@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity() {
         rollButton.text = getString(R.string.roll_btn_txt)
 
         rollButton.setOnClickListener {
-            Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        TODO("Not yet implemented")
     }
 }
