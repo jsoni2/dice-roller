@@ -1,9 +1,10 @@
 package com.example.diceroller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        TODO("Not yet implemented")
+        val resultText: TextView = findViewById(R.id.result_text)
+        val randomInt = Random().nextInt(6) + 1
+        resultText.text = randomInt.toString()
     }
 }
